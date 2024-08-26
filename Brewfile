@@ -30,20 +30,12 @@ brew "perl"
 brew "python@3.10"
 # Ruby version manager
 brew "rbenv"
-# Terminal-based client for Spotify
-brew "spotify-tui"
 # Vi 'workalike' with many additional features
 brew "vim"
 # Menu bar tool to limit maximum charging percentage
 cask "aldente"
 # Automatic tiling window manager similar to xmonad
 cask "amethyst"
-# Manage team projects and tasks
-cask "asana"
-# Web browser
-cask "firefox"
-# UI toolkit for building applications for mobile, web and desktop
-cask "flutter"
 # Web browser
 cask "google-chrome"
 # Utility to hide menu bar items
@@ -68,26 +60,12 @@ cask "phpstorm"
 cask "postman"
 # Control your tools with a few keystrokes
 cask "raycast"
-# React client for Simplenote
-cask "simplenote"
-# Team communication and collaboration software
-cask "slack"
 # Music streaming service
 cask "spotify"
-# Video game digital distribution service
-cask "steam"
 # Real time file synchronisation software
 cask "syncthing"
-# Remote access and connectivity software focused on security
-cask "teamviewer"
-# Messaging app with a focus on speed and security
-cask "telegram"
-# SSH client
-cask "termius"
 # Open-source code editor
 cask "visual-studio-code"
-# Remote desktop application focusing on security
-cask "vnc-viewer"
 # Native desktop client for WhatsApp
 cask "whatsapp"
 vscode "dart-code.dart-code"
