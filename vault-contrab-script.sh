@@ -17,3 +17,5 @@ if [[ -n "$status" ]]; then
    echo "log: $commit"
    echo "log: $push"
 fi
+
+echo "done $time"
