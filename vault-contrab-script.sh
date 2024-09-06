@@ -9,11 +9,14 @@ cd "$repo_path"
 status=$(git status --short)
 
 if [[ -n "$status" ]]; then
-   add=$(git add .)
-   commit_and_push=$(git commit -m "$time" && git push)
-   echo "committed $status at $time"
-   echo "log-add: $add"
-   echo "log-commit: $commit_and_push"
+   git add .
+   echo " "
+
+   git commit -m "$time"
+   echo " "
+
+   git push
+   echo " "
 fi
 
 echo "done $time"
