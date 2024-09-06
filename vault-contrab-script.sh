@@ -13,9 +13,9 @@ if [[ -n "$status" ]]; then
    commit=$(git commit -m "$time")
    push=$(git push)
    echo "committed $status at $time"
-   echo "log: $add"
-   echo "log: $commit"
-   echo "log: $push"
+   echo "log-add: $add"
+   echo "log-commit: $commit"
+   echo "log-push: $push"
 fi
 
 echo "done $time"
