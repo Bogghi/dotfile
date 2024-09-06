@@ -10,12 +10,10 @@ status=$(git status --short)
 
 if [[ -n "$status" ]]; then
    add=$(git add .)
-   commit=$(git commit -m "$time")
-   push=$(git push)
+   commit_and_push=$(git commit -m "$time" && git push)
    echo "committed $status at $time"
    echo "log-add: $add"
-   echo "log-commit: $commit"
-   echo "log-push: $push"
+   echo "log-commit: $commit_and_push"
 fi
 
 echo "done $time"
