@@ -10,7 +10,7 @@ exec('cd /Users/matteoborghi/Vault');
 
 // Check the Git status
 $status = exec('git status --short');
-
+print $status;
 $pwd = exec('pwd');
 print $pwd;
 
