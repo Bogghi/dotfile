@@ -11,6 +11,9 @@ exec('cd /Users/matteoborghi/Vault');
 // Check the Git status
 $status = exec('git status --short');
 
+$pwd = exec('pwd');
+print $pwd;
+
 // If there are changes, commit and push
 if (!empty($status)) {
     exec('git add .');
