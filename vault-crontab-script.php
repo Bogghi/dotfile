@@ -19,8 +19,8 @@ if (!empty($status)) {
     exec('git commit -m "' . $time . '"');
     echo " ";
 
-    exec('git push');
-    echo " ";
+    $var = exec('git push');
+    echo "$var ";
 }
 
 echo "done " . $time;
