@@ -1,4 +1,6 @@
 <?php 
+require_once __DIR__."/vendor/autoload.php";
+
 $obj = new Datetime();
 
 $obj->modify("+2 hour");
