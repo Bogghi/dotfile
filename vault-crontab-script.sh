@@ -1,6 +1,5 @@
 #!/bin/bash
 
-sudo su matteoborghi
 
 # Get the current user
 user=$(whoami)
@@ -11,7 +10,7 @@ echo "$user"
 time=$(date +%Y%m%d%H%M%S)
 
 # Change directory to the specified path
-cd /Users/matteoborghi/Vault
+cd "/Users/$user/Vault/"
 
 # Check the Git status
 status=$(git status --short)
