@@ -23,3 +23,7 @@ select * from payments order by payment_id desc;
 select type from orders order by order_id desc;
 select plan_id, plan_cycle, plan_plugin_pos, plan_plugin_counter, name from businesses;
 select distinct network from transactions;
+SELECT * FROM events_stripe WHERE event = 'evt_3QD6dcL1BrR61arW1XrjBKW7';
+select * from businesses where company_email = 'borghi@qromo.it';
+select * from users where user_id in (8, 674);
+select * from users_businesses where business_id = 625
