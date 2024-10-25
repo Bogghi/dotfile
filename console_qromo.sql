@@ -12,7 +12,8 @@ select * from users_businesses where user_id = 674;
 select order_id, type, date from orders where type = 'cash' order by date desc;
 select * from users;
 select * from orders order by date desc;
-select * from orders where order_id = 31031;
+select * from orders where order_id in (31074, 31084, 31085);
+select * from orders_payments where order_id in (31074, 31084, 31085);
 
 #### Query email
 
@@ -24,6 +25,6 @@ select type from orders order by order_id desc;
 select plan_id, plan_cycle, plan_plugin_pos, plan_plugin_counter, name from businesses;
 select distinct network from transactions;
 SELECT * FROM events_stripe WHERE event = 'evt_3QD6dcL1BrR61arW1XrjBKW7';
-select * from businesses where company_email = 'borghi@qromo.it';
+select company_email from businesses where business_id = 628;
 select * from users where user_id in (8, 674);
 select * from users_businesses where business_id = 625
