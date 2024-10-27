@@ -100,9 +100,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias flutter="/opt/homebrew/Caskroom/flutter/3.24.3/flutter/bin/flutter"
 
-alias reset_ad2="ssh matteo.borghi@192.168.100.7 'sudo rm -r /var/www/vhosts/auto1dev2.ncainfra.cloud/*'"
+alias flutter="/opt/homebrew/Caskroom/flutter/3.24.3/flutter/bin/flutter"
+alias commit_command='f() { git add . && git commit -m "$1" && git push; }; f'
 
 if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
    export PATH=/opt/homebrew/opt/ruby/bin:$PATH
