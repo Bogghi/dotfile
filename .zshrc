@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias flutter="/opt/homebrew/Caskroom/flutter/3.22.2/flutter/bin/flutter"
+alias flutter="/opt/homebrew/Caskroom/flutter/3.24.3/flutter/bin/flutter"
 
 alias reset_ad2="ssh matteo.borghi@192.168.100.7 'sudo rm -r /var/www/vhosts/auto1dev2.ncainfra.cloud/*'"
 
@@ -108,7 +108,7 @@ if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
    export PATH=/opt/homebrew/opt/ruby/bin:$PATH
    export PATH=`gem environment gemdir`/bin:$PATH
 fi
-			
-export PATH=$PATH:/Users/matteo/.spicetify
+
 
 alias del_wa_at="rm ~/Downloads/'WhatsApp '*"
+export PATH="/opt/homebrew/bin:$PATH"
