@@ -100,15 +100,22 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias flutter="/opt/homebrew/Caskroom/flutter/3.22.2/flutter/bin/flutter"
+
+alias flutter="/opt/homebrew/Caskroom/flutter/3.27.1/flutter/bin/flutter"
 alias commit_command='f() { git add . && git commit -m "$1" && git push; }; f'
+alias ga='f() { git add $1; }; f' 
+alias gaa='git add .' 
+alias gs='git status'
+alias gc='f() { git commit -m "$1"; }; f' 
+alias gp='git push'
 
 if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
    export PATH=/opt/homebrew/opt/ruby/bin:$PATH
    export PATH=`gem environment gemdir`/bin:$PATH
 fi
-			
-export PATH=$PATH:/Users/matteo/.spicetify
 
 
-
+alias del_wa_at="rm ~/Downloads/'WhatsApp '*"
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.3/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.3/sbin:$PATH"
