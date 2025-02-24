@@ -101,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias flutter="/opt/homebrew/Caskroom/flutter/3.27.1/flutter/bin/flutter"
+alias flutter="/opt/homebrew/Caskroom/flutter/3.29.0/flutter/bin/flutter"
 alias commit_command='f() { git add . && git commit -m "$1" && git push; }; f'
 alias ga='f() { git add $1; }; f' 
 alias gaa='git add .' 
