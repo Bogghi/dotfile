@@ -4,42 +4,6 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Hyper+P to Paste (⌘V)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "p",
-                                    "modifiers": { "mandatory": ["left_command", "left_option", "left_control", "left_shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "v",
-                                        "modifiers": ["left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Hyper+Y to Cut (⌘X)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "y",
-                                    "modifiers": { "mandatory": ["left_command", "left_option", "left_control", "left_shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "x",
-                                        "modifiers": ["left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Hyper+X to Delete Next Word (Vim dw)",
                         "manipulators": [
                             {
