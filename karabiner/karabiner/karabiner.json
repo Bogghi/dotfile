@@ -4,6 +4,30 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Hyper+G to move to beginning of file (Home key)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "g",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_option",
+                                            "left_control",
+                                            "left_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "home"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "description": "Hyper+P to Paste (⌘V)",
                         "manipulators": [
                             {

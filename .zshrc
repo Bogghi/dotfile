@@ -119,3 +119,22 @@ alias del_wa_at="rm ~/Downloads/'WhatsApp '*"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.3/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.3/sbin:$PATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+function gfs() {
+    local action=${1:-add}  # Default action is 'add' unless specified
+    local files=$(git status --short | fzf -m --preview "git diff --color=always -- {2}" | awk '{print $2}')
+
+    if [[ -n "$files" ]]; then
+        case "$action" in
+            add) git add $files ;;
+            reset) git reset $files ;;
+            checkout) git checkout -- $files ;;
+            vim) vim $files ;;
+            *) echo "Unsupported action: $action" ;;
+        esac
+    else
+        echo "No files selected."
+    fi
+}

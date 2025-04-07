@@ -3,3 +3,5 @@
 	email = Bogghi@users.noreply.github.com
 [core]
 	autocrlf = input
+[push]
+	autoSetupRemote = true
