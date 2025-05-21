@@ -3,7 +3,7 @@
         {
             "complex_modifications": {
                 "rules": [
-                    {
+		    {
                         "description": "Hyper+G to move to beginning of file (Home key)",
                         "manipulators": [
                             {

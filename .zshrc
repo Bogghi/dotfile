@@ -108,6 +108,7 @@ alias gaa='git add .'
 alias gs='git status'
 alias gc='f() { git commit -m "$1"; }; f' 
 alias gp='git push'
+alias lg='lazygit'
 
 if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
    export PATH=/opt/homebrew/opt/ruby/bin:$PATH
