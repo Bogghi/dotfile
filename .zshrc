@@ -148,3 +148,5 @@ function gfs() {
     fi
 }
 
+
+. "$HOME/.local/bin/env"
