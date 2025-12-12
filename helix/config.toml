@@ -11,6 +11,11 @@ mode.select = "SELECT"
 clipboard-provider = "pasteboard"
 bufferline = "always"
 
+[editor.soft-wrap]
+enable = true
+max-wrap = 20          # Increase wrap width slightly beyond viewport
+max-indent-retain = 0  # Don't indent wrapped lines excessively
+wrap-indicator = "↪ "  # Character to show where wrap happens
 
 [keys.normal]
 y = "yank_to_clipboard"

@@ -1,23 +1,52 @@
+# ===================
+# PHP Configuration
+# ===================
 [[language]]
 name = "php"
 auto-format = true
-language-servers = [ "intelephense" ]
+language-servers = ["intelephense"]
 
 [language-server.intelephense]
 command = "intelephense"
 args = ["--stdio"]
-config = { storagePath = "/tmp/intelephense" }
-# Add your source folders here so it scans them
-includePaths = ["."] 
 
+# ===================
+# JavaScript/TypeScript Configuration
+# ===================
+[[language]]
+name = "javascript"
+auto-format = true
+language-servers = ["typescript-language-server"]
+
+[[language]]
+name = "typescript"
+auto-format = true
+language-servers = ["typescript-language-server"]
+
+[[language]]
+name = "jsx"
+auto-format = true
+language-servers = ["typescript-language-server"]
+
+[[language]]
+name = "tsx"
+auto-format = true
+language-servers = ["typescript-language-server"]
+
+# ===================
+# Vue.js Configuration
+# ===================
 [[language]]
 name = "vue"
 auto-format = true
-language-servers = [ "vue-language-server" ]
+language-servers = ["typescript-language-server", "vue-language-server"]
 
 [language-server.vue-language-server]
 command = "vue-language-server"
 args = ["--stdio"]
-# CRITICAL FIX: Point explicitly to the tsserver library
 config = { typescript = { tsdk = "/opt/homebrew/lib/node_modules/typescript/lib" } }
 
+[[language-server.typescript-language-server.config.plugins]]
+name = "@vue/typescript-plugin"
+location = "/opt/homebrew/lib/node_modules/@vue/typescript-plugin"
+languages = ["vue"]
