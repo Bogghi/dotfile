@@ -1,0 +1,25 @@
+theme = "ayu_evolve"
+
+[editor.statusline]
+left = ["mode", "selections", "primary-selection-length", "separator", "position", "total-line-numbers"]
+right = ["file-absolute-path", "separator", "file-encoding", "file-line-ending", "separator", "spinner", "diagnostics", "workspace-diagnostics", "separator", "version-control"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor]
+clipboard-provider = "pasteboard"
+bufferline = "always"
+
+
+[keys.normal]
+y = "yank_to_clipboard"
+p = "paste_clipboard_after"
+P = "paste_clipboard_before"
+"tab" = ":bn"       # Next buffer
+"S-tab" = ":bp"     # Previous buffer
+"C-w" = ":bc"       # Ctrl+w to close buffer (optional, like browsers/IDEs)
+
+[keys.select]
+y = "yank_to_clipboard"
+p = "replace_selections_with_clipboard"
