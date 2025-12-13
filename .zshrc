@@ -101,6 +101,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+ZSH_THEME=aussiegeek
+
 alias flutter="/opt/homebrew/Caskroom/flutter/3.29.0/flutter/bin/flutter"
 alias commit_command='f() { git add . && git commit -m "$1" && git push; }; f'
 alias ga='f() { git add $1; }; f' 
@@ -109,6 +111,11 @@ alias gs='git status'
 alias gc='f() { git commit -m "$1"; }; f' 
 alias gp='git push'
 alias lg='lazygit'
+alias qrssrc='cd ~/Library/Application\ Support/JetBrains/PhpStorm2025.1'
+alias qrsrc='cd ~/src/qromo-clean'
+alias pfzf='phpstorm $(fzf)'
+alias kpcli='/opt/homebrew/Caskroom/keepassxc/2.7.11/KeePassXC.app/Contents/MacOS/keepassxc-cli'
+alias okpdb='kpcli open ~/src/Vault/02\ -\ Aree/passwords/DatabaseX.kdbx'
 
 if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
    export PATH=/opt/homebrew/opt/ruby/bin:$PATH
