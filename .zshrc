@@ -120,6 +120,7 @@ alias del_wa_at="rm ~/Downloads/'WhatsApp '*"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.3/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.3/sbin:$PATH"
+export PATH="/Applications/PhpStorm.app/Contents/MacOS:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -139,3 +140,6 @@ function gfs() {
         echo "No files selected."
     fi
 }
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
