@@ -1,4 +1,4 @@
-theme = "ayu_evolve"
+theme = "dracula"
 
 [editor.statusline]
 left = ["mode", "selections", "primary-selection-length", "separator", "position", "total-line-numbers"]
