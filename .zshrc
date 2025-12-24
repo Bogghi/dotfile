@@ -150,3 +150,5 @@ function gfs() {
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+
+fpath=(~/.zsh/completions $fpath)
