@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="bira"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -103,7 +103,6 @@ source $ZSH/oh-my-zsh.sh
 
 ZSH_THEME=aussiegeek
 
-alias flutter="/opt/homebrew/Caskroom/flutter/3.29.0/flutter/bin/flutter"
 alias commit_command='f() { git add . && git commit -m "$1" && git push; }; f'
 alias ga='f() { git add $1; }; f' 
 alias gaa='git add .' 
@@ -128,6 +127,7 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.3/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.3/sbin:$PATH"
 export PATH="/Applications/PhpStorm.app/Contents/MacOS:$PATH"
+export LEDGER_FILE="~/Vault/Personal Finance/ledger/hledger.md"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -152,3 +152,18 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
 fpath=(~/.zsh/completions $fpath)
+
+bindkey '^[^[[D' backward-word
+bindkey '^[^[[C' forward-word
+
+
+
+# bun completions
+[ -s "/Users/matteo/.bun/_bun" ] && source "/Users/matteo/.bun/_bun"
+
+# Mammouth Code
+export PATH="$HOME/.mammouth/bin:$PATH"
+
+
+# Added by Antigravity CLI installer
+export PATH="/Users/matteo/.local/bin:$PATH"
