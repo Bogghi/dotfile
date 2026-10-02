@@ -1,0 +1,30 @@
+{
+  "name": "Carbonfox",
+  "base": "dark",
+  "overrides": {
+    "claude": "#78a9ff",
+    "claudeShimmer": "#a6c8ff",
+    "text": "#f2f4f8",
+    "inverseText": "#161616",
+    "inactive": "#525252",
+    "subtle": "#525252",
+    "suggestion": "#33b1ff",
+    "permission": "#78a9ff",
+    "permissionShimmer": "#a6c8ff",
+    "promptBorder": "#525252",
+    "promptBorderShimmer": "#78a9ff",
+    "planMode": "#08bdba",
+    "autoAccept": "#be95ff",
+    "bashBorder": "#ff7eb6",
+    "success": "#25be6a",
+    "error": "#ee5396",
+    "warning": "#ff832b",
+    "merged": "#be95ff",
+    "diffAdded": "#0f3d24",
+    "diffRemoved": "#4a1530",
+    "diffAddedWord": "#25be6a",
+    "diffRemovedWord": "#ee5396",
+    "userMessageBackground": "#262626",
+    "selectionBg": "#393939"
+  }
+}
