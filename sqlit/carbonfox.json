@@ -1,0 +1,20 @@
+{
+  "theme": {
+    "name": "carbonfox",
+    "dark": true,
+    "primary": "#78A9FF",
+    "secondary": "#BE95FF",
+    "accent": "#33B1FF",
+    "warning": "#ffa332",
+    "error": "#EE5396",
+    "success": "#25be6a",
+    "foreground": "#f2f4f8",
+    "background": "#161616",
+    "surface": "#1d1d1d",
+    "panel": "#242424",
+    "variables": {
+      "border": "#2b2b2b",
+      "input-selection-background": "#78A9FF 25%"
+    }
+  }
+}
