@@ -1,5 +1,4 @@
-# Matteo Simone Borghi dotfiles
+# dotfile
 
-Hello!
-
-This repo has to objective to track my dotfile for my mac.
+- macOS: `./install.sh`
+- Windows (PowerShell): `.\install.ps1` (nvim, lazygit, git, claude theme). Needs git, node, a C compiler, ripgrep.

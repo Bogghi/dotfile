@@ -1,5 +1,5 @@
 -- Change this to your repo path
-set SRC_DIR to POSIX file "/Users/matteoborghi/src"
+set SRC_DIR to POSIX file "/Users/matteo/src"
 
 tell application "iTerm2"
   activate

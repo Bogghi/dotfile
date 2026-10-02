@@ -101,7 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-ZSH_THEME=aussiegeek
 
 alias commit_command='f() { git add . && git commit -m "$1" && git push; }; f'
 alias ga='f() { git add $1; }; f' 
@@ -149,7 +148,6 @@ function gfs() {
 }
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
 
 fpath=(~/.zsh/completions $fpath)
 
@@ -166,4 +164,3 @@ export PATH="$HOME/.mammouth/bin:$PATH"
 
 
 # Added by Antigravity CLI installer
-export PATH="/Users/matteo/.local/bin:$PATH"

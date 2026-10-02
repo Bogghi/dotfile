@@ -1,1 +1,5 @@
+.DS_Store
 vendor/
+**/automatic_backups/
+helix/runtime/
+Brewfile.lock.json

@@ -2,6 +2,6 @@
 	name = Matteo Simone Borghi
 	email = Bogghi@users.noreply.github.com
 [core]
-	autocrlf = input
+	autocrlf = false
 [push]
 	autoSetupRemote = true
