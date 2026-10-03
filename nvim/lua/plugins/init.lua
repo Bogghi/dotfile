@@ -76,6 +76,18 @@ return {
   },
 
   {
+    "catgoose/nvim-colorizer.lua",
+    event = "BufReadPre",
+    opts = {
+      user_default_options = {
+        css_fn = true, -- rgb/hsl/oklch
+        css_var = true, -- resolve var(--x), incl. aliases
+        mode = "virtualtext",
+      },
+    },
+  },
+
+  {
     "coder/claudecode.nvim",
     dependencies = { "folke/snacks.nvim" },
     config = true,
